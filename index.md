@@ -35,3 +35,41 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        // membuat variabel dan scanner
+        int nilai;
+        String grade;
+        Scanner input = new Scanner(System.in);
+
+        // mengambil input
+        System.out.print("Inputkan nilai: ");
+        nilai = input.nextInt();
+
+        // higung gradenya
+        if ( nilai >= 90 ) {
+            grade = "A";
+        } else if ( nilai >= 80 ){
+            grade = "B+";
+        } else if ( nilai >= 70 ){
+            grade = "B";
+        } else if ( nilai >= 60 ){
+            grade = "C+";
+        } else if ( nilai >= 50 ){
+            grade = "C";
+        } else if ( nilai >= 40 ){
+            grade = "D";
+        } else {
+            grade = "E";
+        }
+
+        // cetak hasilnya
+        System.out.println("Grade: " + grade);
+    }
+}
+```
